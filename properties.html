@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Properties</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50">
+
+<!-- Navbar -->
+ 
+<div class="bg-white shadow p-4 flex justify-between">
+   <img src="logo.png" alt="Siddhartha Homes" class="h-20 w-auto">
+      <h1 class="text-lg font-bold">SiddharthaHomes</h1>
+  <a href="index.html" class="text-blue-500">← Back to Home</a>
+</div>
+
+<!-- Heading -->
+<div class="text-center py-10">
+  <h2 class="text-3xl font-bold">All Properties</h2>
+</div>
+
+<!-- Filters -->
+<div class="max-w-7xl mx-auto px-6 mb-8 grid md:grid-cols-3 gap-4">
+
+  <input type="text" id="searchInput"
+         placeholder="Search location..."
+         class="p-3 border rounded-lg">
+
+  <select id="typeFilter" class="p-3 border rounded-lg">
+    <option value="">All Types</option>
+    <option value="1 BHK">1 BHK</option>
+    <option value="2 BHK">2 BHK</option>
+    <option value="3 BHK">3 BHK</option>
+    <option value="Villa">Villa</option>
+    <option value="Plot">Plot</option>
+  </select>
+
+  <select id="priceFilter" class="p-3 border rounded-lg">
+    <option value="">All Prices</option>
+    <option value="low">Below 50L</option>
+    <option value="mid">50L - 1Cr</option>
+    <option value="high">Above 1Cr</option>
+  </select>
+
+</div>
+
+<!-- Properties -->
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 pb-10">
+
+  <!-- 1 -->
+  <div class="property bg-white rounded-xl shadow-lg"
+       data-type="3 BHK" data-price="mid" data-location="baner">
+    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" class="h-56 w-full object-cover">
+    <div class="p-5">
+      <h3>3 BHK - Baner</h3>
+      <p>₹95 Lakh</p>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="property bg-white rounded-xl shadow-lg"
+       data-type="2 BHK" data-price="mid" data-location="wakad">
+    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" class="h-56 w-full object-cover">
+    <div class="p-5">
+      <h3>2 BHK - Wakad</h3>
+      <p>₹65 Lakh</p>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="property bg-white rounded-xl shadow-lg"
+       data-type="villa" data-price="high" data-location="hinjewadi">
+    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6" class="h-56 w-full object-cover">
+    <div class="p-5">
+      <h3>Villa - Hinjewadi</h3>
+      <p>₹1.5 Cr</p>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="property bg-white rounded-xl shadow-lg"
+       data-type="1 BHK" data-price="low" data-location="pimpri">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="h-56 w-full object-cover">
+    <div class="p-5">
+      <h3>1 BHK - Pimpri</h3>
+      <p>₹45 Lakh</p>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="property bg-white rounded-xl shadow-lg"
+       data-type="2 BHK" data-price="mid" data-location="kharadi">
+    <img src="https://images.unsplash.com/photo-1599423300746-b62533397364" class="h-56 w-full object-cover">
+    <div class="p-5">
+      <h3>2 BHK - Kharadi</h3>
+      <p>₹75 Lakh</p>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="property bg-white rounded-xl shadow-lg"
+       data-type="plot" data-price="low" data-location="wagholi">
+    <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6" class="h-56 w-full object-cover">
+    <div class="p-5">
+      <h3>Plot - Wagholi</h3>
+      <p>₹35 Lakh</p>
+    </div>
+  </div>
+
+  <!-- 7 -->
+  <div class="property bg-white rounded-xl shadow-lg"
+       data-type="3 BHK" data-price="high" data-location="aundh">
+    <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716" class="h-56 w-full object-cover">
+    <div class="p-5">
+      <h3>3 BHK - Aundh</h3>
+      <p>₹1.2 Cr</p>
+    </div>
+  </div>
+
+  <!-- 8 -->
+  <div class="property bg-white rounded-xl shadow-lg"
+       data-type="2 BHK" data-price="mid" data-location="hadapsar">
+    <img src="https://images.unsplash.com/photo-1600607687644-c7f34b6e8f04" class="h-56 w-full object-cover">
+    <div class="p-5">
+      <h3>2 BHK - Hadapsar</h3>
+      <p>₹70 Lakh</p>
+    </div>
+  </div>
+
+  <!-- 9 -->
+  <div class="property bg-white rounded-xl shadow-lg"
+       data-type="studio" data-price="low" data-location="viman nagar">
+    <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4" class="h-56 w-full object-cover">
+    <div class="p-5">
+      <h3>Studio - Viman Nagar</h3>
+      <p>₹40 Lakh</p>
+    </div>
+  </div>
+
+  <!-- 10 -->
+  <div class="property bg-white rounded-xl shadow-lg"
+       data-type="villa" data-price="high" data-location="bavdhan">
+    <img src="https://images.unsplash.com/photo-1600585154200-5c9e54c96e63" class="h-56 w-full object-cover">
+    <div class="p-5">
+      <h3>Villa - Bavdhan</h3>
+      <p>₹2 Cr</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- JS -->
+<script>
+const searchInput = document.getElementById("searchInput");
+const typeFilter = document.getElementById("typeFilter");
+const priceFilter = document.getElementById("priceFilter");
+const properties = document.querySelectorAll(".property");
+
+function filterProperties() {
+  const search = searchInput.value.toLowerCase();
+  const type = typeFilter.value;
+  const price = priceFilter.value;
+
+  properties.forEach(p => {
+    const matchSearch = p.dataset.location.includes(search);
+    const matchType = !type || p.dataset.type === type;
+    const matchPrice = !price || p.dataset.price === price;
+
+    p.style.display = (matchSearch && matchType && matchPrice) ? "block" : "none";
+  });
+}
+
+searchInput.addEventListener("input", filterProperties);
+typeFilter.addEventListener("change", filterProperties);
+priceFilter.addEventListener("change", filterProperties);
+</script>
+
+</body>
+</html>
